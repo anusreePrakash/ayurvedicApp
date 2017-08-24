@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hi</title>
+  </head>
+  <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script type="text/javascript">
+
+</script>
+  <body>
+<div class="homepage">
+  <div class="background-image"></div>
+
+
+  <%= link "Book Appoinment", to: appoinment_path(@conn, :index), class: "btn btn-default btn-xs ", id: "book_online_button" %>
+  <!-- <div class="header_wrapper" >
+
+    <nav class="navbar navbar-toggleable-md navbar-light">
+
+      <a class="navbar-brand" id="heading_name" href="#">Sree Sasta</a>
+      <div class=" navbar" id="navbarNav">
+        <ul class="nav navbar-nav pull-right" id="nav-titles">
+            <li id="home-tab" >
+                <a class="tab active-tab" href="#">HOME</a>
+            </li>
+            <li id="about-tab">
+              <a class="tab" <%= link "ABOUT US", to: appoinment_path(@conn, :index)  %></a>
+
+            </li>
+            <li id="services-tab" >
+              <a class="tab" <%= link "SERVICES", to: appoinment_path(@conn, :index)  %></a>
+
+            </li>
+            <li id="treatments-tab">
+              <a class="tab" <%= link "TREATMENTS", to: appoinment_path(@conn, :index)  %></a>
+
+            </li>
+            <li id="gallery-tab">
+              <a class="tab" <%= link "GALLERY", to: appoinment_path(@conn, :index)  %></a>
+
+            </li>
+            <li id="contact-tab">
+                <a class="tab" <%= link "CONTACT", to: appoinment_path(@conn, :index)  %></a>
+
+
+            </li>
+
+        </ul>
+      </div>
+    </nav>
+
+
+  </div> -->
+  <div class="slider_container">
+    <span class="slidertop-shadow"></span>
+    <div class="slider2">
+      <div class="slide">
+        <div class="slide1">
+          <h1>Ayurveda</h1>
+          <p>"Ayurveda is a consciousness based approach to health, a spiritual medicine recogizing the phenomenal intelligence in every grain, every seed and all life"</p>
+        </div>
+      </div>
+      <!-- <div class="slide">
+        <div class="slide2">
+          <h1>Yoga And Meditation</h1>
+          <p>"Yoga is not about self-improvement, it is about self-acceptance.</p>
+          <br>
+          <p>It is the journey of the self, through the self to self"</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide3">
+          <h1>Kalaripayattu</h1>
+          <p>"Kalari is the only form of the most ancient traditional system of physical, culture, self-defense and martial tecniques still in existence" </p>
+
+        </div> -->
+      </div>
+      </div>
+  </div>
+
+</div>
+
+  </body>
+</html>

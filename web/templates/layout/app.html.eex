@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hello SreeShasta!</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/homepage.css") %>">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+
+
+
+<!--  -->
+<div class="header_wrapper" >
+
+  <nav class="navbar navbar-toggleable-md navbar-light">
+
+    <a class="navbar-brand" id="heading_name" href="#">Sree Sasta</a>
+    <div class=" navbar" id="navbarNav">
+      <ul class="nav navbar-nav pull-right" id="nav-titles">
+          <li id="home-tab" >
+              <a class="tab active-tab" href="/">HOME</a>
+          </li>
+          <li id="about-tab">
+            <a class="tab" <%= link "ABOUT US", to: aboutus_path(@conn, :index)  %></a>
+
+          </li>
+          <li id="services-tab" >
+            <a class="tab" <%= link "SERVICES " , to: appoinment_path(@conn, :index)  %></a>
+            <ul class="dropdown">
+                <li><a href="#">Ayurvedic Treatment</a></li>
+                <li><a href="#">Yoga and Meditation Programs</a></li>
+                <li><a href="#">Kalaripayattu Training</a></li>
+            </ul>
+          </li>
+          <li id="treatments-tab">
+            <a class="tab" <%= link "TREATMENTS", to: appoinment_path(@conn, :index)  %></a>
+            <ul class="dropdown">
+                <li><a href="#">Panchakarama treatment</a></li>
+                <li><a href="#">Weight loss program</a></li>
+                <li><a href="#">Detax and rejuvination </a></li>
+                <li><a href="#">Beauty care and Eye care </a></li>
+                <li><a href="#">Remove stress and strain </a></li>
+                <li><a href="#">Preventive regenerative </a></li>
+                <li><a href="#">Sinusities and allergy </a></li>
+                <li><a href="#">Migrain </a></li>
+                <li><a href="#">Slipdisc treatment </a></li>
+                <li><a href="#">Arithrities and spondylits </a></li>
+                <li><a href="#">Chronic backpain </a></li>
+                <li><a href="#">Treatment for skin disease and psoriasis  </a></li>
+            </ul>
+          </li>
+          <li id="gallery-tab">
+            <a class="tab" <%= link "GALLERY", to: appoinment_path(@conn, :index)  %></a>
+
+          </li>
+          <li id="contact-tab">
+              <a class="tab" <%= link "CONTACT", to: contact_path(@conn, :index)  %></a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+
+</div>
+<!--  -->
+
+<div class="homepage" id="homepage">
+  <main role="main">
+    <%= render @view_module, @view_template, assigns %>
+</main>
+</div>
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>

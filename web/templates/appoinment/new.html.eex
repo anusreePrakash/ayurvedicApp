@@ -1,0 +1,6 @@
+<h2>New appoinment</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: appoinment_path(@conn, :create) %>
+
+<%= link "Back", to: appoinment_path(@conn, :index) %>

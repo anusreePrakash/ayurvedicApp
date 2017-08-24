@@ -1,0 +1,54 @@
+<!-- <link rel="stylesheet" href="<%= static_path(@conn, "/css/appoinment.css") %>"> -->
+<!-- # <%= link "a link", to: "/", class: assigns[:class] || "default" %> -->
+<link rel="stylesheet" href="<%= static_path(@conn, "/css/appoinment.css") %>">
+
+
+
+<div class="book_appoinment">
+  <h1>BOOK AN APPOINMENT</h1>
+  <div class="appoinment_data">
+
+  <%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+  <div class="alert alert-danger">
+    <p>Oops, something went wrong! Please check the errors below.</p>
+  </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= label f, :first_name, class: "control-label" %>
+    <%= text_input f, :first_name, class: "form-control" %>
+    <%= error_tag f, :first_name %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :last_name, class: "control-label" %>
+    <%= text_input f, :last_name, class: "form-control" %>
+    <%= error_tag f, :last_name %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :date_and_time, class: "control-label" %>
+    <%= text_input f, :date_and_time, class: "form-control", type: "datetime-local"  %>
+    <%= error_tag f, :date_and_time %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :mobile, class: "control-label" %>
+    <%= text_input f, :mobile, class: "form-control", type: "number" %>
+    <%= error_tag f, :mobile %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :email, class: "control-label" %>
+    <%= text_input f, :email, class: "form-control", type: "email" %>
+    <%= error_tag f, :email %>
+  </div>
+
+  <div class="form-group">
+    <%= submit "Submit", class: "btn btn-primary" %>
+  </div>
+  <% end %>
+  </div>
+
+</div>
