@@ -20,6 +20,9 @@ defmodule SreeShasta.Router do
     resources "/appoinments", AppoinmentController
     resources "/contacts", ContactController
     resources "/aboutus", AboutusController
+    resources "/ayurveda", AyurvedaController
+    resources "/kalaripayattu", KalaripayattuController
+    resources "/yoga", YogaController
   end
 
   # Other scopes may use custom stacks.

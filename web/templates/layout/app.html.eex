@@ -39,11 +39,11 @@
 
           </li>
           <li id="services-tab" >
-            <a class="tab" <%= link "SERVICES " , to: appoinment_path(@conn, :index)  %></a>
+            <a href="#">SERVICES</a>
             <ul class="dropdown">
-                <li><a href="#">Ayurvedic Treatment</a></li>
-                <li><a href="#">Yoga and Meditation Programs</a></li>
-                <li><a href="#">Kalaripayattu Training</a></li>
+                <li><a class="tab" <%= link "Ayurveda Treatments " , to: ayurveda_path(@conn, :index)  %></a></li>
+                <li><a class="tab" <%= link "Yoga and Meditation " , to: yoga_path(@conn, :index)  %></a></li>
+                <li><a class="tab" <%= link "Kalaripayattu " , to: kalaripayattu_path(@conn, :index)  %></a></li>
             </ul>
           </li>
           <li id="treatments-tab">
@@ -65,7 +65,10 @@
           </li>
           <li id="gallery-tab">
             <a class="tab" <%= link "GALLERY", to: appoinment_path(@conn, :index)  %></a>
-
+            <ul class="dropdown">
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Photoes</a></li>
+            </ul>
           </li>
           <li id="contact-tab">
               <a class="tab" <%= link "CONTACT", to: contact_path(@conn, :index)  %></a>
